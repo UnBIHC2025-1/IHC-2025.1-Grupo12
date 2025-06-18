@@ -1,0 +1,51 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #0B1F3A; /* Azul marinho escuro principal */
+  --ifm-color-primary-dark: #081933; /* Azul marinho mais escuro */
+  --ifm-color-primary-darker: #061528; /* Azul profundo */
+  --ifm-color-primary-darkest: #040F1C; /* Azul quase preto */
+  --ifm-color-primary-light: #1D3B60; /* Azul intermediário */
+  --ifm-color-primary-lighter: #3C5A80; /* Azul suavizado */
+  --ifm-color-primary-lightest: #6B8CB3; /* Azul claro derivado */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #6B8CB3; /* Rosa mais escuro e vibrante */
+  --ifm-color-primary-dark: #081933; /* Azul marinho mais escuro */
+  --ifm-color-primary-darker: #061528; /* Azul profundo */
+  --ifm-color-primary-darkest: #040F1C; /* Azul quase preto */
+  --ifm-color-primary-light: #1D3B60; /* Azul intermediário */
+  --ifm-color-primary-lighter: #3C5A80; /* Azul suavizado */
+  --ifm-color-primary-lightest: #6B8CB3; /* Azul claro derivado */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Estilo para o cabeçalho da tabela */
+table th {
+  background-color: var(--ifm-color-primary-dark); /* Cor escura para o cabeçalho */
+  color: white;
+}
+
+[data-theme='dark'] table th {
+  background-color: var(--ifm-color-primary); /* Cor de fundo mais vibrante para o cabeçalho */
+}
+
+p { 
+  text-align: justify;
+}

@@ -1,0 +1,4 @@
+node_modules/
+.docussaurus/
+package-lock.json
+build/
