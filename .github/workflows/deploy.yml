@@ -1,0 +1,35 @@
+name: Deploy Docusaurus to GitHub Pages
+
+on:
+  push:
+    branches: [main]          # gatilho contínuo
+
+permissions:                 # habilita push na gh-pages
+  contents: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4              # Node 20-ready :contentReference[oaicite:0]{index=0}
+
+      - name: Set up Node
+        uses: actions/setup-node@v4            # roda em Node 20 por padrão :contentReference[oaicite:1]{index=1}
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4    # action oficial de deploy :contentReference[oaicite:2]{index=2}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
