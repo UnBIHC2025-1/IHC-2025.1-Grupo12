@@ -2,10 +2,10 @@ name: Deploy Docusaurus to GitHub Pages
 
 on:
   push:
-    branches: [main]          # gatilho contínuo
+    branches: [main]
 
-permissions:                 # habilita push na gh-pages
-  contents: write
+permissions:
+  contents: write                # permite push na gh-pages
 
 jobs:
   build-deploy:
@@ -13,23 +13,28 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4              # Node 20-ready :contentReference[oaicite:0]{index=0}
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Node
-        uses: actions/setup-node@v4            # roda em Node 20 por padrão :contentReference[oaicite:1]{index=1}
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
+          cache-dependency-path: docs/package-lock.json   # <-- lockfile correto
 
       - name: Install dependencies
+        working-directory: ./docs                        # <-- entra em docs
         run: npm ci
 
       - name: Build site
+        working-directory: ./docs
         run: npm run build
 
       - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v4    # action oficial de deploy :contentReference[oaicite:2]{index=2}
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
           publish_branch: gh-pages
+          publish_dir: ./docs/build                      # <-- saída correta
