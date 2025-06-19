@@ -1,42 +1,31 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import {themes as prismThemes} from 'prism-react-renderer';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Pocket',
   tagline: 'Checklist de Acessibilidade',
   favicon: 'img/checklisticon.svg',
-  deploymentBranch: "gh-pages",
-  // Set the production url of your site here
-  url: 'https://unbihc2025-1.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/IHC-2025.1-Grupo12/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'IHC', // Usually your GitHub org/user name.
-  projectName: 'IHC-2025.1-Grupo12', // Usually your repo name.
+  // ───────────────────────────── Deploy ─────────────────────────────
+  deploymentBranch: 'gh-pages',
+  url: 'https://unbihc2025-1.github.io',
+  baseUrl: '/IHC-2025.1-Grupo12/',
+  organizationName: 'UnBIHC2025-1',   // owner do repositório
+  projectName: 'IHC-2025.1-Grupo12', // nome do repositório
   trailingSlash: false,
-  
+
+  // ───────────────────────────── Qualidade ──────────────────────────
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // ───────────────────────────── Idioma ─────────────────────────────
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'pt-BR',
+    locales: ['pt-BR'],
   },
 
+  // ──────────────────────────── Presets ─────────────────────────────
   presets: [
     [
       'classic',
@@ -44,8 +33,6 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -54,15 +41,15 @@ const config = {
     ],
   ],
 
+  // ──────────────────────────── Tema ────────────────────────────────
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Início',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Logo do Projeto',
           src: 'img/checklisticon.svg',
         },
         items: [
@@ -85,10 +72,7 @@ const config = {
           {
             title: 'Docs',
             items: [
-              {
-                label: 'Checklist',
-                to: '/docs/intro',
-              },
+              {label: 'Checklist', to: '/docs/intro'},
             ],
           },
         ],
