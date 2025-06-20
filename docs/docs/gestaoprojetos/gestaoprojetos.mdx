@@ -2,24 +2,139 @@ import ChecklistItem from '@site/src/components/CheckListItem.js';
 import ChecklistItemMarked from '@site/src/components/CheckListItemMarked.js';
 import Expandable from '@site/src/components/Expandable';
 
-# Gestão de Projetos
+# Perfis de Usuários com Deficiência
 
-## Pessoas com Deficiência visual
+Para garantir que a acessibilidade digital impacte positivamente a vida de milhões de pessoas, é fundamental que ela seja considerada desde a concepção do projeto, na fase de iniciação da Gestão de Projetos de Acessibilidade. [1]
 
-    Pessoas com Deficiência Visual - Sem visão 
-    Pessoas com Deficiência Visual - Visão limitada
-    Pessoas com Deficiência visual - Sem percepção de calor
+Nessa lógica, durante a etapa inicial do desenvolvimento de um software, é crucial elaborar personas que representem os diversos perfis de usuários com deficiência. Isso assegura que o software contenha requisitos de acessibilidade desde o início.
+
+## Pessoas com Deficiência Visual
+
+De acordo com o Guia de Boas Práticas para Acessibilidade Digital do Reino Unido, as pessoas com deficiência visual incluem:
+
+- Pessoas com Deficiência Visual - Sem visão (cegueira)
+- Pessoas com Deficiência Visual - Visão limitada (baixa visão)
+- Pessoas com Deficiência Visual - Daltonismo ou deficiência cromática
+
+Esses usuários frequentemente utilizam tecnologias assistivas como leitores de tela, ampliadores de tela e lupas eletrônicas para navegar na web.
+
+## Pessoas com Deficiência Física
+
+O Guia do Reino Unido menciona que pessoas com deficiência física podem apresentar fraqueza, tremores, movimentos involuntários, paralisia, limitações de sensação, dor que impede movimento ou ausência de membros. Muitos desses usuários não conseguem usar o mouse e dependem do teclado para navegação, ou utilizam tecnologias como navegação pelos olhos, joysticks especiais e recursos de voz.
 
 ## Pessoas com Deficiência Auditiva
 
-    Pessoas com Deficiência de audição limitada
+Incluem pessoas com surdez, baixa audição ou surdocegueira. Para esses usuários, recursos como legendas e interpretação em Língua Brasileira de Sinais (Libras) são essenciais para a compreensão do conteúdo.
 
-## Pessoas com Deficiência Vocal
+## Pessoas com Deficiência na Fala
 
-    Pessoas com Deficiência de fala limitada
-    Pessoas com Deficiência de ausencia da fala
-    Pessoas com Deficiência de fala fraca ou de força limitada
-    
-## Pessoas com cognição limitada 
+Caracterizadas por dificuldades para falar, volume insuficiente, gagueira ou mudez. Embora o Censo 2010 não tenha mapeado essa condição, a acessibilidade para esse grupo é crucial, e pode envolver o uso de tecnologias de comunicação alternativa e aumentativa.
 
-## PEssoas com epilepsia fotossensível
+## Pessoas Neurodiversas
+
+Este grupo abrange dificuldades de diferentes graus para ver, escutar, falar, compreender e interagir socialmente, incluindo deficiências intelectuais e psicossociais. Pessoas neurodiversas, como aquelas com síndrome de Down, espectro autista, dislexia e TDAH, se beneficiam de conteúdos mais inteligíveis, objetivos e sem distrações, além de acesso a conteúdos em diferentes formatos de forma simultânea. Utilizam recursos como teclado, navegação pelos olhos, joysticks especiais e jogos de cores.
+
+## Pessoas com Múltiplas Deficiências
+
+Refere-se à combinação de duas ou mais deficiências. A acessibilidade para este grupo exige soluções integradas que atendam às suas diversas necessidades.
+
+## Possíveis limitações decorrentes do envelhecimento
+
+O envelhecimento pode trazer limitações que se enquadram em um ou mais grupos de deficiências, tornando a acessibilidade digital benéfica para essa parcela da população também.
+
+## Pessoas com Analfabetismo
+
+Inclui analfabetismo digital e funcional em diferentes níveis. A simplicidade e clareza na linguagem e na interface são fundamentais para garantir a acessibilidade para esses usuários.
+
+# Conscientização
+
+"Na iniciação do projeto, é necessário garantir que a equipe de projeto esteja consciente sobre a questão da acessibilidade digital, dos direitos das pessoas com deficiência e do potencial de mercado desse público" [1].
+
+Sendo assim, existem argumentos que podem facilitar o processo de conscientização da equipe sobre a questão da acessibilidade digital. Esses argumentos estão representados no checklist abaixo.
+
+Em seu projeto, a equipe está consciente de...
+
+- [ ] Quantidade de pessoas no mundo com algum tipo de deficiência (pelo menos 1,3 bilhão de pessoas no mundo com algum tipo de deficiência, conforme o Guia do Reino Unido).
+- [ ] Quantidade de pessoas no Brasil com algum tipo de deficiência, segundo IBGE (18,6 milhões de PcD no país, segundo a PNAD Contínua, conforme o Guia do Reino Unido).
+- [ ] Natureza da deficiência: congênita, hereditária, adquirida, temporária (mencionado no Guia do Reino Unido).
+- [ ] Grupos mais comuns de tipos de deficiência (detalhados acima e no Guia do Reino Unido).
+- [ ] Quanto custa a acessibilidade? (Acessibilidade deve ser considerada desde o início para evitar custos maiores de correção posterior).
+- [ ] Quanto tempo a mais o projeto precisará para implementar acessibilidade? (A integração da acessibilidade desde o início do projeto otimiza o tempo e evita retrabalho).
+- [ ] Quantas pessoas com deficiência vão usar meu aplicativo ou acessar meu sítio de Internet? (Um número significativo de pessoas, conforme dados do IBGE e do Guia do Reino Unido, se beneficiará).
+- [ ] Pessoas cegas compram online? (Sim, e a falta de acessibilidade pode impedi-las de finalizar compras, como exemplificado no Guia do Reino Unido).
+- [ ] Pessoas tetraplégicas usam smartphone? (Sim, com tecnologias assistivas e interfaces adaptadas).
+- [ ] Legislação: A Convenção sobre os Direitos das Pessoas com Deficiência Comentada (mencionada no template).
+- [ ] Legislação: PORTARIA Nº 3, DE 7 DE MAIO DE 2007 (mencionada no template).
+- [ ] Análise de mercado de software de acessibilidade digital (mencionada no template).
+
+# Planejamento
+
+"É importante prever e elaborar a arquitetura para todos os públicos com deficiência, visando uma vida autônoma, com segurança e bem-estar" [1].
+
+Assim, é de suma importância que se tenha incluso no plano de projeto a definição de recursos alocados para a estratégia de acessibilidade de um projeto de software.
+
+Em seu planejamento, há...
+
+- [ ] Atividades bem delineadas, cronogramas e atribuições de responsabilidade relacionadas à acessibilidade? (A NBR 17225 e o WCAG 2.2 fornecem diretrizes detalhadas que podem ser transformadas em atividades e requisitos específicos).
+- [ ] Recursos alocados (pessoas, softwares, cursos, tarefas)? (A alocação de recursos é fundamental para a implementação das diretrizes da NBR 17225 e WCAG 2.2).
+- [ ] Tarefas com critérios de sucesso que atendam pelo menos os níveis A e AA, segundo a documentação de acessibilidade (WCAG)? (A NBR 17225 é baseada nos critérios de sucesso do WCAG 2.2, com foco nos níveis A e AA como recomendação mínima).
+
+## Referências Bibliográficas
+
+[1] DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. Guia de Boas Práticas para Acessibilidade Digital. Programa de Cooperação entre Reino Unido e Brasil em Acesso Digital, 2023. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf). Acesso em: 9 Mai. 2024
+
+## Bibliografia
+
+- **A Convenção sobre Direitos das Pessoas com Deficiência comentada.** Brasília: Secretaria Especial dos Direitos Humanos, 2008. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/convencao-direitos-pessoas-deficiencia-comentada.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/convencao-direitos-pessoas-deficiencia-comentada.pdf). Acesso em: 9 Mai. 2024
+
+- **Portaria nº 3, de 7 de maio de 2007.** Institucionaliza o Modelo de Acessibilidade em Governo Eletrônico – e-MAG. Diário Oficial da União. Disponível em: [https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/legislacao/portaria3_eMAG.pdf](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/legislacao/portaria3_eMAG.pdf). Acesso em: 9 Mai. 2024
+
+- **MORDOR INTELLIGENCE.** Digital Accessibility Software Market Size & Share Analysis - Growth Trends & Forecasts (2024-2029). Disponível em: [https://www.mordorintelligence.com/industry-reports/digital-accessibility-software-market](https://www.mordorintelligence.com/industry-reports/digital-accessibility-software-market). Acesso em: 9 Mai. 2024
+
+- **WORLD WIDE WEB CONSORTIUM.** Web Content Accessibility Guidelines (WCAG) 2.1. Recomendação W3C. Disponível em: [https://www.w3.org/TR/WCAG21/#sotd](https://www.w3.org/TR/WCAG21/#sotd). Acesso em: 9 Mai. 2024
+
+- **ABNT.** NBR 17225: Acessibilidade em conteúdo e aplicações web — Requisitos. Rio de Janeiro, 2025.
+
+- **WORLD WIDE WEB CONSORTIUM.** Web Content Accessibility Guidelines (WCAG) 2.2. Disponível em: [https://www.w3.org/TR/WCAG22/](https://www.w3.org/TR/WCAG22/). Acesso em: 20 Jun. 2025
+
+# Diretrizes de Acessibilidade (NBR 17225 e WCAG 2.2)
+
+A NBR 17225, baseada nas Diretrizes de Acessibilidade para Conteúdo Web (WCAG) 2.2, estabelece requisitos e recomendações para garantir a acessibilidade em conteúdo e aplicações web. Os critérios de sucesso do WCAG 2.2 são organizados em três níveis de conformidade: A (mais básico), AA (recomendado para a maioria do conteúdo web) e AAA (mais difícil de obter, mas que oferece o maior nível de acessibilidade).
+
+As diretrizes da NBR 17225 abrangem diversas áreas, incluindo:
+
+## Interação por Teclado
+
+- **Indicador de foco visível:** Requisito para que o elemento em foco seja visualmente indicado.
+- **Ordem de foco previsível:** Requisito para que a navegação por teclado siga uma ordem lógica e previsível.
+- **Armadilha de foco:** Requisito para evitar que o foco do teclado fique preso em um elemento.
+- **Atalhos de teclado sem tecla modificadora:** Requisito para evitar conflitos com atalhos de tecnologias assistivas.
+
+## Imagens
+
+- **Texto alternativo para imagens de conteúdo**
+- **Texto alternativo para imagens funcionais**
+- **Descrição para imagens complexas**
+
+## Cabeçalhos e Regiões
+
+- **Semântica e uso de cabeçalhos**
+- **Semântica e uso de regiões**
+
+## Links e Navegação
+
+- **Propósito do link no contexto**
+- **Navegação consistente**
+
+## Formulários e Entrada de Dados
+
+- **Rótulo de campo associado e descritivo**
+- **Mensagem de erro descritiva e sugestão de correção**
+- **Prevenção de erro para formulários críticos**
+
+## Apresentação e Cores
+
+- **Design responsivo**
+- **Contraste para texto e componentes**
+
+Estas são apenas algumas das diretrizes abrangidas pela NBR 17225 e WCAG 2.2. A implementação completa dessas diretrizes é essencial para criar uma experiência web verdadeiramente acessível para todos os usuários.
