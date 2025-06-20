@@ -48,17 +48,23 @@ const config = {
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Início',
-        logo: {
-          alt: 'Logo do Projeto',
-          src: 'img/checklisticon.svg',
-        },
+        // logo: {
+        //   alt: 'Logo do Projeto',
+        //   src: 'img/checklisticon.svg',
+        // },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Pocket de Acessibilidade',
+            label: 'Introdução',
           },
+          {
+    to: '/docs/devweb', // ou URL externa
+    label: 'Início da Checklist',
+    position: 'left',
+    activeBasePath: 'docs/checklist', // mantém estado “ativo”
+  },
           {
             href: 'https://github.com/UnBIHC2025-1/IHC-2025.1-Grupo12',
             label: 'GitHub',

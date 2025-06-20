@@ -4,27 +4,27 @@ const sidebars = {
     {
       type: 'doc',
       id: 'devweb/devweb', // refere-se a 'docs/intro.md'
-      label: 'Desenvolvimento Web',
+      label: '1. Desenvolvimento Web',
     },
      {
       type: 'doc',
       id: 'design/design', // refere-se a 'docs/intro.md'
-      label: 'Design',
+      label: '2. Design',
     },
      {
       type: 'doc',
       id: 'geracaoconteudo/geracaoconteudo', // refere-se a 'docs/intro.md'
-      label: 'Geração de Conteúdo',
+      label: '3. Geração de Conteúdo',
     },
      {
       type: 'doc',
       id: 'gestaoprojetos/gestaoprojetos', // refere-se a 'docs/intro.md'
-      label: 'Gestão de Projetos',
+      label: '4. Gestão de Projetos',
     },
      {
       type: 'doc',
       id: 'ferramentas/ferramentas', // refere-se a 'docs/intro.md'
-      label: 'Ferramentas',
+      label: '5. Ferramentas',
     },
   ],
 };
