@@ -1,4 +1,4 @@
-# O que é o Checklist ?
+# Introdução
 
 ## Equipe
 
