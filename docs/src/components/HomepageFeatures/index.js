@@ -7,7 +7,7 @@ export default function HomepageFeatures() {
       <div className="container">
         <div className="text--center padding-vert--lg">
           {/* subtítulo orientado à ação */}
-          <Heading as="h1">Como funciona a avaliação?</Heading>
+          <Heading as="h3">O checklist não é apenas um repositório de regras, mas um meio de integrar boas práticas de acessibilidade<br/> ao fluxo diário de desenvolvimento, promovendo experiências inclusivas e alinhadas à legislação vigente.</Heading>
 
           {/* proposta de valor resumida */}
           <p className="text--center margin-bottom--md">
