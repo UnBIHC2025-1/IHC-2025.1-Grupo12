@@ -9,7 +9,7 @@ const sidebars = {
      {
       type: 'doc',
       id: 'design/design', // refere-se a 'docs/intro.md'
-      label: '2. Design',
+      label: '2. Design Visual',
     },
      {
       type: 'doc',

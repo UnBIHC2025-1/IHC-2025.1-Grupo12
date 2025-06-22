@@ -1,69 +1,92 @@
-import ChecklistItem from '@site/src/components/CheckListItem.js';
-import ChecklistItemMarked from '@site/src/components/CheckListItemMarked.js';
+import CheckListItem from '@site/src/components/CheckListItem.js';
+import CheckListItemMarked from '@site/src/components/CheckListItemMarked.js';
 import Expandable from '@site/src/components/Expandable';
 
-# Design
+# Design Visual
 
-Texto descritivo...
+Cada tópico foi alinhado com referências da **NBR 17225:2025**, critérios da **WCAG 2.2** e boas práticas do **Guia de Acessibilidade do Governo do Reino Unido**, garantindo conformidade técnica e apoio prático à implementação. O objetivo é assegurar que a camada visual – cores, tipografia, layout e movimento – seja inclusiva desde o primeiro esboço até a entrega em produção.
 
-## Aparência
+## 1. – Aparência Geral
 
-### Cores
-<ChecklistItem>1. Fazer uso de cores para ajudar o entendimento ao conteúdo da página e facilitar o acesso.</ChecklistItem>
-<ChecklistItem>2. Não fazer apenas o uso de cores para transmitir informações, indicar ações, requistiar respostas ou distingir elementos visuais.</ChecklistItem>
-    
-    ### Contraste de texto 
-<ChecklistItem>3. Todos conteúdo de texto, incluindo imagens de textos, têm constraste de pelo menos 7:1 em relação ao fundo ou entre sí.</ChecklistItem>
-<ChecklistItem>4. Todos conteúdo de texto está em tamanho grande e têm relação de constraste de pelo menos 4,5:1 em relação ao fundo ou entre sí.</ChecklistItem>
+### 1.1 – Cores e Contraste
+- <CheckListItem>1. Contraste mínimo 4,5 : 1 para texto normal.</CheckListItem>
+- <CheckListItem>2. Contraste mínimo 3 : 1 para texto grande (≥ 18 pt ou 14 pt negrito).</CheckListItem>
+- <CheckListItem>3. Contraste mínimo 3 : 1 para ícones e componentes (inputs, bordas, botões).</CheckListItem>
+- <CheckListItem>4. Indicador de foco visível com contraste ≥ 3 : 1.</CheckListItem>
+- <CheckListItem>5. Instruções ou informações não dependem exclusivamente da cor.</CheckListItem>
+- <CheckListItem>6. Cores personalizadas de <code>::selection</code> mantêm contraste acessível.</CheckListItem>
 
-### Constraste de elemento gráfico
-<ChecklistItem>5. Todos componenentes de interface têm relação de contraste de pelo menos 3:1 em relação ao fundo ou entre sí.</ChecklistItem>
-<ChecklistItem>6. Todas as partes de um objeto gráficos necessários para compreender o conteúdo têm relação de constraste de pelo menos 3:1 em relação ao fundo, ou entre sí.</ChecklistItem>
-<ChecklistItem>7. Todos os indicadores de foco viśivel dos elementos têm uma relação de constraste de pelo menos 3:1 com o fundo ou entre o estado sem foco e o com foco.</ChecklistItem>
+<details>
+  <summary><strong>Referências</strong></summary>
 
---- 
+  - NBR 17225:2025 – 5.11.3 / [WCAG 2.2 – C.S. 1.4.3](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html)  
+  - NBR 17225:2025 – 5.11.4‑6 / [WCAG 2.2 – C.S. 1.4.11](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html)  
+  - NBR 17225:2025 – 5.11.1 / [WCAG 2.2 – C.S. 1.4.1](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html)
 
-## Textos
+</details>
 
-    ### Espaçamento entre as linhas, letras, paragrafos e blocos de texto
-    <ChecklistItem>1. Todos os blocos de texto têm um espaçamento entre as linhas (entrelinhas) de pelo menos 1,5 vez o tamanho da fonte.</ChecklistItem>
-    <ChecklistItem>2. Todos parágrafos têm espaçamento entre si de pelo menos 2 vezes o tamanho da fonte.</ChecklistItem>
-    <ChecklistItem>3. Todos os blocos de texto têm espaçamento entre as linhas (rastreamento) de pelo menos 0.12 vez o tamanho da fonte</ChecklistItem>
-    <ChecklistItem>4. Todos os blocos de texto têm espaçamento entre as palavras de pelo menos 0.16 vez o tamanho da fonte</ChecklistItem>
-    <ChecklistItem>5. Todos os blocos de texto estão alinhados à esquerda para idiomas lidos da esquerda para direita.</ChecklistItem>
-    <ChecklistItem>6. Todos os blocos de texto estão alinhados à direita para idiomas lidos da direita para esquerda.</ChecklistItem>
-    <ChecklistItem>7. Existe um mecanismo para configurar o espaçamento onde não haja perda de conteudo ou funcionalidade </ChecklistItem>
-    <ChecklistItem>8. A largura do bloco de texto não ultrapassa 80 caracteres.</ChecklistItem>
-    <ChecklistItem>9. Existe um mecanismo para configurar a largura dos blocos de texto e alcançar os 80 caracteres por bloco de texto.</ChecklistItem>
+### 1.2 – Tipografia
+- <CheckListItem>1. Texto redimensionável até 200 % sem perda de conteúdo.</CheckListItem>
+- <CheckListItem>2. Máximo 80 caracteres por linha (≈ 40 CJK).</CheckListItem>
+- <CheckListItem>3. Espaçamento: linhas 1,5×; parágrafos 2×; letras 0,12×; palavras 0,16×.</CheckListItem>
+- <CheckListItem>4. Evitar textos longos em caixa alta ou ultra‑condensados.</CheckListItem>
+- <CheckListItem>5. Evitar alinhamento justificado, salvo exceções editoriais.</CheckListItem>
 
----
-## Nível de conformidade
+<details>
+  <summary><strong>Referências</strong></summary>
 
----
-### Aparência
-[2] - C.S. 1.4.1, Nível de coonformidade A.
-[3],[4] - C.S. 1.4.3, Nível de coonformidade AA.
-[5] - C.S. 1.4.11, Nível de conformidade AA.
-[6] - C.S. 1.4.11, Nível de conformidade AA.
-[7] - C.S. 1.4.11, Nível de conformidade AA, C.S. 2.4.13, Nível de conformidade AAA.
+  - NBR 17225:2025 – 5.12.7 / [WCAG 2.2 – C.S. 1.4.4](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html)  
+  - NBR 17225:2025 – 5.12.6 / [WCAG 2.2 – C.S. 1.4.10](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html)  
+  - NBR 17225:2025 – 5.12.1‑4 / [WCAG 2.2 – C.S. 1.4.12](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html)  
+  - NBR 17225:2025 – 5.12.5 / [WCAG 2.2 – C.S. 1.4.8](https://www.w3.org/WAI/WCAG22/Understanding/visual-presentation.html)
 
----
-### Textos
-[1] - C.S 1.4.12, Nível de conformidade AA, C.S. 1.4.8 Nível de conformidade AAA
-[2] - C.S 1.4.12, Nível de conformidade AA, C.S. 1.4.8 Nível de conformidade AAA
-[3] - C.S 1.4.12, Nível de conformidade AA
-[4] - C.S 1.4.12, Nível de conformidade AA
-[5] - C.S. 1.4.8 Nível de conformidade AAA
-[6] - C.S. 1.4.8 Nível de conformidade AAA //ferramenta
-[7] - C.S. 1.4.10 Nível de conformidade AA, C.S. 1.4.8 Nível de conformidade AAA
-[8] - C.S. 1.4.8 Nível de conformidade AAA //ferramenta
-[9]
+</details>
 
----
-### Animações
+### 1.3 – Layout e Responsividade
+- <CheckListItem>1. Sem barras de rolagem horizontais em 320 px (largura) ou 256 px (altura).</CheckListItem>
+- <CheckListItem>2. Suporta ambas as orientações de tela (retratos e paisagem).</CheckListItem>
+- <CheckListItem>3. Linhas de texto se ajustam ao viewport sem ocultar conteúdo.</CheckListItem>
+- <CheckListItem>4. Modo escuro / alto contraste, respeitando <code>prefers-color-scheme</code>.</CheckListItem>
+- <CheckListItem>5. Fontes, paddings e gutters em unidades relativas (<em>rem/em</em>).</CheckListItem>
 
+<details>
+  <summary><strong>Referências</strong></summary>
 
----
-### Ferramentas de ajuda
+  - NBR 17225:2025 – 5.10.4 / [WCAG 2.2 – C.S. 1.4.10](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html)  
+  - NBR 17225:2025 – 5.10.3 / [WCAG 2.2 – C.S. 1.3.4](https://www.w3.org/WAI/WCAG22/Understanding/orientation.html)
 
----
+</details>
+
+## 2. – Animação e Movimento
+
+### 2.1 – Animações Gerais
+- <CheckListItem>1. Pausar, parar ou ocultar animações automáticas (> 5 s).</CheckListItem>
+- <CheckListItem>2. Evitar conteúdo que pisque mais de 3 vezes/s.</CheckListItem>
+- <CheckListItem>3. Respeitar <code>prefers-reduced-motion</code> em transições.</CheckListItem>
+- <CheckListItem>4. Permitir controle de animações paralelas ao conteúdo.</CheckListItem>
+
+<details>
+  <summary><strong>Referências</strong></summary>
+
+  - NBR 17225:2025 – 5.15.1 / [WCAG 2.2 – C.S. 2.2.2](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html)  
+  - NBR 17225:2025 – 5.15.4 / [WCAG 2.2 – C.S. 2.3.1](https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html)  
+  - NBR 17225:2025 – 5.15.2 / [WCAG 2.2 – C.S. 2.3.3](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html)
+
+</details>
+
+## 3. – Indicadores e Feedback Visual
+- <CheckListItem>1. Foco visível em todos os elementos interativos.</CheckListItem>
+- <CheckListItem>2. Área de foco equivalente a contorno de 2 px.</CheckListItem>
+- <CheckListItem>3. Feedback perceptível ao clicar/tocar (hover, active, pressed).</CheckListItem>
+
+<details>
+  <summary><strong>Referências</strong></summary>
+
+  - NBR 17225:2025 – 5.1.1 / [WCAG 2.2 – C.S. 2.4.7](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html)  
+  - NBR 17225:2025 – 5.10.5 / [WCAG 2.2 – C.S. 2.4.13](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html)  
+  - NBR 17225:2025 – 5.8.15 / [WCAG 2.2 – C.S. 4.1.3](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)
+
+</details>
+
+## Referências gerais
+*Baseado na [NBR 17225:2025](../../static/nbr17225.pdf), nos Critérios de Sucesso da [WCAG 2.2](https://www.w3.org/TR/WCAG22/) e no [Guia de Acessibilidade do Governo do Reino Unido](../../static/uk_guiaboaspraticas.pdf).*
