@@ -1,8 +1,8 @@
 # Grupo 12 - Interação Humano Computador | 2025.1
 
 ## Implementação dos critérios WCAG 3.3.7, 3.3.8 e 3.3.9.
-GitHub Pages: https://caua08.github.io/wcag-frontend-IHC-2025.1-Grupo12/
-Repositório: https://github.com/caua08/wcag-frontend-IHC-2025.1-Grupo12
+- GitHub Pages: https://caua08.github.io/wcag-frontend-IHC-2025.1-Grupo12/
+- Repositório: https://github.com/caua08/wcag-frontend-IHC-2025.1-Grupo12
 
 # Guia de Acessibilidade – Checklist
 
