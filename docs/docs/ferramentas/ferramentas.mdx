@@ -1,7 +1,135 @@
-import ChecklistItem from '@site/src/components/CheckListItem.js';
-import ChecklistItemMarked from '@site/src/components/CheckListItemMarked.js';
-import Expandable from '@site/src/components/Expandable';
+# Ferramentas de Acessibilidade
 
-# Ferramentas
+Para facilitar a conformidade com **NBR 17225:2025**, **WCAG 2.2** e o **Guia de Acessibilidade do Governo do Reino Unido**, utilize as ferramentas abaixo, agrupadas pela fase de uso no ciclo de desenvolvimento.
 
-Texto descritivo...
+## 1. Design & Prototipação
+
+- [Stark](https://www.getstark.co/) — contraste, simulador de daltonismo, verificador de target‑size.
+- [Contrast (Figma plugin)](https://www.figma.com/community/plugin/748533339900865323/contrast) — checa contraste diretamente no mock‑up.
+- [Accessibility Annotation (Figma plugin)](https://www.figma.com/community/plugin/1208180794570801545/include-accessibility-annotations) — adiciona alt‑text, landmarks e headings já no design.
+
+<details>
+  <summary><strong>Por que usar</strong></summary>
+
+  * Evita falhas de contraste (NBR 5.11 / WCAG 1.4.3).
+  * Valida tamanho de alvo de toque (NBR 5.8.7 / WCAG 2.5.8).
+  * Garante hierarquia semântica ainda no mock‑up (NBR 5.3‑5.4).
+
+</details>
+
+---
+
+## 2. Automação no Código
+
+- [axe‑core](https://github.com/dequelabs/axe-core) / [axe DevTools](https://www.deque.com/axe/) — motor de regras WCAG; extensão, CLI e GitHub Action.
+- [Accessibility Insights for Web](https://accessibilityinsights.io/) — "Fast Pass" (+ 26 testes) e wizard de verificação manual.
+- [Pa11y CI](https://pa11y.org/) — auditoria em lote, relatórios HTML/JSON, fácil de integrar em pipelines.
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/) (modo A11y) — auditoria rápida e score distribuído por categoria.
+- [Cypress‑axe](https://github.com/component-driven/cypress-axe) / [@axe‑playwright](https://github.com/abhinaba-ghosh/axe-playwright) — injeta regras axe em testes end‑to‑end.
+
+<details>
+  <summary><strong>Por que usar</strong></summary>
+
+  * Automatiza critérios obrigatórios (NBR 5.13 / WCAG 4.1.2).
+  * Bloqueia merge quando existir falha de nível AA.
+  * Gera relatórios rastreáveis para auditoria (Guia UK Gov Service Manual).
+
+</details>
+
+---
+
+## 3. Checagem de Cor & Tipografia
+
+- [Colour Contrast Analyser (CCA)](https://www.tpgi.com/color-contrast-checker/) — desktop, mede qualquer pixel (3:1 / 4.5:1 / 7:1).
+- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) — ajuste rápido de paletas e resultados AA/AAA.
+
+<details>
+  <summary><strong>Por que usar</strong></summary>
+
+  * Valida contraste mínimo (NBR 5.11.3 / WCAG 1.4.3).
+  * Simula baixa visão para revisão de tipografia (Anexo B – B.1.2).
+
+</details>
+
+---
+
+## 4. Leitores de Tela & Tecnologias Assistivas
+
+- [NVDA](https://www.nvaccess.org/) — leitor de tela gratuito (Windows, PT‑BR).
+- [JAWS](https://www.freedomscientific.com/products/software/jaws/) — leitor profissional para Windows; referência em órgãos públicos.
+- [TalkBack](https://support.google.com/accessibility/android/answer/6007100) — integrado ao Android.
+
+<details>
+  <summary><strong>Por que usar</strong></summary>
+
+  * Garante navegação por teclado e anúncio correto dos elementos (NBR 5.1 / WCAG 2.1.1).
+  * Valida mensagens de status (NBR 5.13.8 / WCAG 4.1.3).
+
+</details>
+
+---
+
+## 5. Mapeamento & Inventário
+
+- [Dynomapper](https://dynomapper.com/) — gera sitemap visual, inventaria PDFs e avalia status de acessibilidade.
+- [Siteimprove Accessibility Checker](https://siteimprove.com/) — rastreamento contínuo, relatórios de tendência.
+
+<details>
+  <summary><strong>Por que usar</strong></summary>
+
+  * Atende NBR 5.7 (localização e navegação) ao mapear páginas órfãs.
+  * Ajuda a planejar auditorias regulares (conformidade plena).
+
+</details>
+
+---
+
+## 6. Simuladores & Pré‑visualização
+
+- [tota11y](https://chromewebstore.google.com/detail/tota11y-for-chrome/nkghaekndgmonifcpfgjmpfjlhnmflhp) — bookmarklet que destaca landmarks, hierarquia de cabeçalhos e foco.
+- [Accessibility Viewer (Safari)](https://developer.apple.com/documentation/accessibility) — overlay iOS para checar rotulagem e contraste.
+
+<details>
+  <summary><strong>Por que usar</strong></summary>
+
+  * Demonstra problemas visuais ao time sem ferramentas externas.
+  * Valida landmarks exigidos em NBR 5.4 (regiões) de forma rápida.
+
+</details>
+
+---
+
+## 7. Documentos & PDF
+
+- [PAC 3](https://www.access-for-all.ch/en/pdf-accessibility-checker.html) — validador de acessibilidade PDF/UA.
+- [Adobe Acrobat Pro](https://www.adobe.com/acrobat.html) — relatório "Accessibility Check" integrado.
+
+<details>
+  <summary><strong>Por que usar</strong></summary>
+
+  * A NBR herda WCAG 2.x para documentos – PAC 3 verifica estrutura, tags e contraste.
+  * Acrobat gera relatório exigido em licitações públicas brasileiras.
+
+</details>
+
+---
+
+## 8. Governança & Relatórios
+
+- [Be Inclusive](https://beinclusive.app/) — gera laudos padrão governo BR (NBR + WCAG).
+- [AmaWeb](https://amaweb.unifesp.br/) — checklist PT‑BR guiado, exporta relatório em PDF.
+
+<details>
+  <summary><strong>Por que usar</strong></summary>
+
+  * Facilita comprovação de conformidade em auditorias externas.
+  * Centraliza histórico de correções, auxiliando na manutenção contínua.
+
+</details>
+
+---
+
+### Referências Gerais
+
+* Cada ferramenta cobre requisitos das seções 5.1 a 5.15 da **NBR 17225:2025** e critérios equivalentes da **WCAG 2.2** (níveis A e AA).  
+* O **Guia de Acessibilidade UK Gov** recomenda axe, Lighthouse e CCA no seu [Service Manual](https://www.gov.uk/service-manual).
