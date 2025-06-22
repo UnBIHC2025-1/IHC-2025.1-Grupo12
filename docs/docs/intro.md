@@ -1,8 +1,10 @@
 # Introdução
 
-A **ABNT NBR 17225** define que os requisitos listados devem “facilitar e otimizar o acesso de todas as pessoas, especialmente com deficiência, aos ambientes virtuais” e servir de referência para atender à legislação brasileira.
-**WCAG 2.2** fornece a base internacional de critérios de sucesso, garantindo interoperabilidade e reconhecimento global.
-Os Guias práticos (WAI-ARIA APG, **UK Gov**) complementam com exemplos de implementação e testes heurísticos, ajudando o desenvolvedor a sair do “o que fazer” para o “como fazer”.
+A **ABNT NBR 17225** define que os requisitos devem “facilitar e otimizar o acesso de todas as pessoas, especialmente com deficiência, aos ambientes virtuais” e servir de referência para atender à legislação brasileira.
+**WCAG 2.2** fornece a base internacional de critérios, garantindo interoperabilidade e reconhecimento global.
+O **Guia de Acessibilidade do Governo do Reino Unido** complementa com exemplos de implementação e testes heurísticos, ajudando o desenvolvedor a sair do “o que fazer” para o “como fazer”.
+
+O checklist não é apenas um repositório de regras, mas um meio de integrar boas práticas de acessibilidade ao fluxo diário de desenvolvimento, promovendo experiências inclusivas e alinhadas à legislação vigente. Cheque rapidamente a conformidade com a WCAG 2.2, a NBR 17225 e as boas práticas internacionais de acessibilidade.
 
 ## Equipe
 
