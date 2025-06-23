@@ -1,62 +1,67 @@
-import ChecklistItem from '@site/src/components/CheckListItem.js';
-import ChecklistItemMarked from '@site/src/components/CheckListItemMarked.js';
-import Expandable from '@site/src/components/Expandable';
+import CheckListItem from '@site/src/components/CheckListItem.js';
 
-# Geração de Conteúdo: Checklist de Acessibilidade
+# Geração de Conteúdo
 
-Produzir conteúdo digital acessível começa com a compreensão de que tudo o que comunicamos impacta diretamente as pessoas. Por isso, é fundamental adotar práticas acessíveis desde a concepção do conteúdo. Este checklist tem como objetivo apoiar sua equipe na criação de materiais que respeitem a diversidade de públicos, promovendo inclusão e equidade no acesso à informação.
+O foco é oferecer recomendações objetivas – da escolha de termos à descrição de mídia – para que redatores, designers e equipes de marketing produzam mensagens realmente compreensíveis a pessoas com deficiência. O resultado esperado é um fluxo editorial que já nasce acessível, reduz retrabalho e garante que cada parágrafo, imagem ou vídeo amplie – e nunca restrinja – o alcance do conteúdo.
 
-## Clareza e Objetividade
-<ChecklistItem>Use textos simples, objetivos e diretos, com vocabulário conhecido e acessível.</ChecklistItem>
-<ChecklistItem>Evite figuras de linguagem, regionalismos ou frases ambíguas.</ChecklistItem>
-<ChecklistItem>Use frases curtas (ideal: 15 a 20 palavras) e pontuação adequada.</ChecklistItem>
+## Termos
+- <CheckListItem>Sempre use o termo **“pessoas com deficiência (PcD)”** – nunca “portador” nem “deficiente”.</CheckListItem>
+- <CheckListItem>Quando relevante, especifique a deficiência (visual, auditiva, física, intelectual, múltipla, pessoa surda, cega, cadeirante, tetraplégica, paraplégica, pessoa com nanismo, baixa visão, pessoa autista, disléxica, neurodivergente).</CheckListItem>
+- <CheckListItem>Evite expressões capacitistas ou paternalistas (“sofre de…”, “vítima de…”, “normal”).</CheckListItem>
 
-## Imagens e Descrição
-<ChecklistItem>Adicione texto alternativo em todas as imagens, ícones e gráficos.</ChecklistItem>
-<ChecklistItem>No alt text, descreva o tipo da imagem (foto, ilustração, mapa...), o que mostra, quem aparece, onde e o que está acontecendo.</ChecklistItem>
-<ChecklistItem>Evite usar imagens como única forma de transmitir informações importantes.</ChecklistItem>
+## Textos
+- <CheckListItem>Escreva de forma **descomplicada** e objetiva; prefira palavras de uso comum.</CheckListItem>
+- <CheckListItem>Evite figuras de linguagem, regionalismos e frases que induzam senso de urgência.</CheckListItem>
+- <CheckListItem>Mantenha sentenças curtas (15 – 20 palavras) e parágrafos curtos.</CheckListItem>
+- <CheckListItem>Dê preferência à **ordem direta** (sujeito → verbo → complemento) e use pontuação adequada.</CheckListItem>
+- <CheckListItem>Evite texto TODO EM MAIÚSCULAS e nunca justifique parágrafos; alinhe à esquerda.</CheckListItem>
+- <CheckListItem>Respeite a hierarquia de títulos (`<h1> → <h2> → <h3>`) sem saltar níveis.</CheckListItem>
 
-## Ícones
-<ChecklistItem>Inclua texto alternativo descritivo em ícones clicáveis.</ChecklistItem>
-<ChecklistItem>Descreva a ação que será realizada ao interagir com o ícone (ex: "botão de enviar formulário").</ChecklistItem>
-<ChecklistItem>Utilize ícones acompanhados de texto sempre que possível.</ChecklistItem>
-
-## Mídias e Multimídia
-<ChecklistItem>Adicione descrições breves para contextualizar vídeos e áudios.</ChecklistItem>
-<ChecklistItem>Inclua legendas em vídeos.</ChecklistItem>
-<ChecklistItem>Em roteiros de vídeo, insira a autodescrição do apresentador. </ChecklistItem>
+## Descrição de Imagens
+- <CheckListItem>Para imagens **informativas**, forneça `alt` que descreva tipo + quem/objeto + onde + ação.</CheckListItem>
+- <CheckListItem>Para imagens **decorativas**, use `alt=""` (vazio).</CheckListItem>
+- <CheckListItem>Não duplique no `alt` informações já presentes na legenda ou texto próximo.</CheckListItem>
+- <CheckListItem>Evite imagens que contenham texto essencial; sempre que possível use HTML/CSS.</CheckListItem>
+- <CheckListItem>Não dependa apenas de cor ou forma para transmitir significado.</CheckListItem>
 
 ## Imagens Complexas
-<ChecklistItem>Para gráficos, infográficos, quadrinhos ou mapas, adicione uma descrição detalhada no corpo do texto.</ChecklistItem>
-<ChecklistItem>Inclua uma descrição resumida no texto alternativo (alt text).</ChecklistItem>
+- <CheckListItem>Posicione gráficos, quadrinhos e mapas em área dedicada, próxima ao texto descritivo.</CheckListItem>
+- <CheckListItem>Forneça resumo no `alt` (até 150 caracteres) e descrição longa detalhada no corpo do texto.</CheckListItem>
+- <CheckListItem>Quando houver números, ofereça tabela de dados equivalente para navegação assistiva.</CheckListItem>
 
-## Compatibilidade com Tecnologias Assistivas
-<ChecklistItem>Evite conteúdos que dependam de movimento, tempo ou interações rápidas, e forneça alternativas ou ajustes.</ChecklistItem>
-<ChecklistItem>Evite o uso de CAPTCHAs visuais sem alternativas acessíveis (como áudio ou reCAPTCHA acessível).</ChecklistItem>
+## Ícones
+- <CheckListItem>Combine **ícone + texto** sempre que possível para reforçar o significado.</CheckListItem>
+- <CheckListItem>Adicione texto alternativo ou `aria-label` nos ícones clicáveis, descrevendo ação/destino (“Abrir menu Configurações”).</CheckListItem>
+- <CheckListItem>Garanta área clicável mínima de **24 × 24 px** e contraste adequado.</CheckListItem>
+- <CheckListItem>Mantenha ícones e ações consistentes em todo o produto.</CheckListItem>
 
-## Podcasts
-<ChecklistItem>Transcreva integralmente o episódio, incluindo quem está falando, efeitos sonoros, trilhas e sons de fundo.</ChecklistItem>
-<ChecklistItem>Adicione uma versão em vídeo com interpretação em Libras e avatar, se possível.</ChecklistItem>
+## Mídias de Vídeo
+- <CheckListItem>Contextualize o vídeo com uma descrição curta antes ou depois do player.</CheckListItem>
+- <CheckListItem>Ofereça legendas sincronizadas (Closed Caption) para todas as falas e sons relevantes.</CheckListItem>
+- <CheckListItem>Forneça audiodescrição sempre que informações visuais forem essenciais para compreensão.</CheckListItem>
+- <CheckListItem>Evite autoplay com som; se necessário, exiba controles **Pausar** / **Silenciar** visíveis de imediato.</CheckListItem>
+- <CheckListItem>Garanta contraste mínimo de 4.5:1 para qualquer texto ou legenda sobreposta ao vídeo.</CheckListItem>
+
+## Autodescrição
+- <CheckListItem>Inclua a autodescrição do apresentador(a) no roteiro e/ou nos primeiros segundos do vídeo.</CheckListItem>
+
+# Podcasts
+- <CheckListItem>Transcreva todo o episódio (falas, trilha, efeitos, identificações de falantes).</CheckListItem>
+- <CheckListItem>Disponibilize versão em vídeo com intérprete de Libras (ou avatar) quando viável.</CheckListItem>
+- <CheckListItem>Adicione marcadores de tempo ou capítulos para facilitar navegação.</CheckListItem>
+- <CheckListItem>Hospede em player acessível por teclado e documente atalhos.</CheckListItem>
 
 ## Hashtags e Emojis
-<ChecklistItem>Escreva hashtags com a primeira letra de cada palavra em maiúscula (ex: #AcessibilidadeDigital).</ChecklistItem>
-<ChecklistItem>Evite o uso excessivo de emojis e verifique se suas descrições não causam ambiguidade.</ChecklistItem>
-<ChecklistItem>Garanta que o conteúdo seja totalmente navegável por teclado, sem exigir uso do mouse.</ChecklistItem>
+- <CheckListItem>Escreva hashtags em **CamelCase** (#AcessibilidadeDigital) para melhor leitura por leitores de tela.</CheckListItem>
+- <CheckListItem>Use emojis com moderação (≤ 3 por frase) e evite repetições longas; verifique a descrição falada.</CheckListItem>
 
-
-## Links e Interatividade
-<ChecklistItem>Use textos descritivos em links e botões. Evite termos genéricos como “clique aqui”.</ChecklistItem>
-<ChecklistItem>Garanta que todos os elementos interativos possam ser acessados por teclado e possuam foco visível.</ChecklistItem>
-
-## Revisão e Validação
-<ChecklistItem>Revise o conteúdo utilizando ferramentas automáticas de acessibilidade e, sempre que possível, envolva usuários reais no processo.</ChecklistItem>
-<ChecklistItem>Atualize periodicamente este checklist com base nas diretrizes da NBR 17225, WCAG e guias internacionais.</ChecklistItem>
+## Hiperlinks
+- <CheckListItem>Escreva textos de links/botões que façam sentido isoladamente (“Baixar relatório em PDF”).</CheckListItem>
+- <CheckListItem>Indique quando o link abre nova guia/janela (texto visível ou `aria-label`).</CheckListItem>
+- <CheckListItem>Evite múltiplos links adjacentes com o mesmo destino e garanta foco visível.</CheckListItem>
 
 ---
 
-### Referências
+## Bibliografia
 
-- **NBR 17225:2023** – Acessibilidade em Comunicação Digital  
-- **WCAG 2.2** – Diretrizes de Acessibilidade para Conteúdo Web  
-- **Guia de Boas Práticas para Acessibilidade Digital** (Programa de Cooperação Reino Unido-Brasil, 2023)  
-  [gov.br/acessibilidade-digital](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf)
+> DINIZ, V.; FERRAZ, R.; NASCIMENTO, C. M.; CREDIDIO, R. **Guia de Boas Práticas para Acessibilidade Digital**. Programa de Cooperação Reino Unido ↔ Brasil em Acesso Digital, 2023. Acesso em: 9 mai 2024. [PDF](https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/guiaboaspraaticasparaacessibilidadedigital.pdf)
