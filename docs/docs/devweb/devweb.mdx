@@ -7,30 +7,38 @@ import Expandable from '@site/src/components/Expandable';
 Cada tópico foi alinhado com referências da **NBR 17225:2025**, critérios da **WCAG 2.2** e orientações do **Guia de Acessibilidade do Governo do Reino Unido**, garantindo conformidade técnica e apoio prático à implementação. O objetivo é tornar conteúdos e interfaces mais inclusivos para pessoas com deficiência, promovendo uma web acessível desde o código até a experiência de uso.
 
 ## 1. – Mídia
-
 ### 1.1 – Imagens
 - <CheckListItem>1. Texto alternativo para imagens de conteúdo.</CheckListItem>
 - <CheckListItem>2. Texto alternativo para imagens funcionais.</CheckListItem>
 - <CheckListItem>3. Imagens decorativas com `alt` vazio.</CheckListItem>
-- <CheckListItem>4. Descrição detalhada de imagens complexas.</CheckListItem>
+- <CheckListItem>4. Descrição detalhada de imagens complexas com `figcaption`.</CheckListItem>
 - <CheckListItem>5. Evitar imagens contendo textos.</CheckListItem>
-- <CheckListItem>6. Texto alternativo para mapas `<map>`.</CheckListItem>
-- <CheckListItem>7. Evitar informações inseridas por CSS.</CheckListItem>
-- <CheckListItem>8. Evitar atributo `title` como alternativa textual.</CheckListItem>
-- <CheckListItem>9. Testar o conteúdo com leitor de tela.</CheckListItem>
+- <CheckListItem>6. Texto alternativo para mapas `<map>`, porém cada `<area>` precisa de `alt` próprio.</CheckListItem>
+### 1.1.1 – Título (de Imagens)
+- <CheckListItem>1. Associar título/caption à imagem com `<figure>` + `<figcaption>`.</CheckListItem>
+- <CheckListItem>2. Título claro, conciso e não repetitivo.</CheckListItem>
+- <CheckListItem>3. Evitar confiar apenas no atributo `title`.</CheckListItem>
 
 <details>
   <summary><strong>Referências</strong></summary>
 
-  - NBR 17225:2025 – 5.2.1 / [WCAG 2.2 – C.S. 1.1.1](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)  
-  - NBR 17225:2025 – 5.2.2 / [WCAG 2.2 – C.S. 1.1.1](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html) · [WCAG 2.2 – C.S. 2.4.4](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html)  
-  - NBR 17225:2025 – 5.2.3 / [WCAG 2.2 – C.S. 1.1.1](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)  
-  - NBR 17225:2025 – 5.2.4 / [WCAG 2.2 – C.S. 1.1.1](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)  
-  - NBR 17225:2025 – 5.2.5 / [WCAG 2.2 – C.S. 1.4.5](https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html) (AA)  
-  - NBR 17225:2025 – 5.2.6 / [WCAG 2.2 – C.S. 1.1.1](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)  
+  - NBR 17225:2025 – 5.2.1    
+  - NBR 17225:2025 – 5.2.2<br/>
+  - NBR 17225:2025 – 5.2.3<br/>
+  - NBR 17225:2025 – 5.2.4<br/>
+  - NBR 17225:2025 – 5.2.5<br/>
+  - NBR 17225:2025 – 5.2.6<br/>
   - NBR 17225:2025 – Anexo A 1.4  
-  - Boas práticas WCAG / UK Gov Guide  
-  - Guia UK / Técnicas WCAG
+  - [WCAG 2.2 – C.S. 2.4.4](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html)  
+  - [WCAG 2.2 – C.S. 1.4.5](https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html) (AA)  
+  - [WCAG 2.2 – C.S. 1.1.1](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)  
+
+<details>
+  <summary><strong>Referências 1.1.1</strong></summary>
+  - NBR 17225:2025 – 5.2.4<br/>
+  - [WCAG 2.2 – C.S. 1.3.1](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html)  
+  - [WCAG 2.2 – C.S. 2.4.4](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html)
+</details>
 
 </details>
 
@@ -185,22 +193,7 @@ Cada tópico foi alinhado com referências da **NBR 17225:2025**, critérios da 
 
 </details>
 
-
-## 5. – Título (de Imagens)
-- <CheckListItem>1. Associar título/caption à imagem com `<figure>` + `<figcaption>`.</CheckListItem>
-- <CheckListItem>2. Título claro, conciso e não repetitivo.</CheckListItem>
-- <CheckListItem>3. Evitar confiar apenas no atributo `title`.</CheckListItem>
-
-<details>
-  <summary><strong>Referências</strong></summary>
-
-  - NBR 17225:2025 – 5.2.4 / [WCAG 2.2 – C.S. 1.3.1](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html)  
-  - [WCAG 2.2 – C.S. 2.4.4](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html)
-
-</details>
-
-
-## 6. – Texto
+## 5. – Texto
 - <CheckListItem>1. Contraste mínimo para texto.</CheckListItem>
 - <CheckListItem>2. Texto redimensionável até 200 %.</CheckListItem>
 - <CheckListItem>3. Espaçamento adequado entre linhas, parágrafos, letras e palavras.</CheckListItem>
@@ -223,7 +216,7 @@ Cada tópico foi alinhado com referências da **NBR 17225:2025**, critérios da 
 </details>
 
 
-## 7. – Tabelas (Imagens × HTML)
+## 6. – Tabelas (Imagens × HTML)
 - <CheckListItem>1. Usar tabelas HTML semânticas em vez de imagens.</CheckListItem>
 - <CheckListItem>2. Se tabela for imagem, fornecer descrição longa.</CheckListItem>
 - <CheckListItem>3. `<caption>` resume a finalidade da tabela.</CheckListItem>
@@ -238,7 +231,7 @@ Cada tópico foi alinhado com referências da **NBR 17225:2025**, critérios da 
 </details>
 
 
-## 8. – Modais
+## 7. – Modais
 - <CheckListItem>1. Focus‑trap e tecla Esc para fechar.</CheckListItem>
 - <CheckListItem>2. Imagem ampliada mantém o mesmo `alt`.</CheckListItem>
 - <CheckListItem>3. Botão "Fechar" como `<button>` com rótulo visível.</CheckListItem>
@@ -254,9 +247,8 @@ Cada tópico foi alinhado com referências da **NBR 17225:2025**, critérios da 
 
 </details>
 
-## 9. - Teclado
+## 8. - Teclado
 - <CheckListItem>1. Todo o conteúdo deve ser navegável só com teclado.</CheckListItem>
-- <CheckListItem>2. Evitar armadilhas de teclado.</CheckListItem>
 - <CheckListItem>3. Ordem de foco lógica.</CheckListItem>
 - <CheckListItem>4. Foco visível.</CheckListItem>
 
@@ -270,10 +262,10 @@ Cada tópico foi alinhado com referências da **NBR 17225:2025**, critérios da 
 
 </details>
 
-## 10. – Dispositivo Móvel e Tocável
+## 9. – Dispositivo Móvel e Tocável
 <CheckListItem>1. Elementos interativos com área mínima de toque de 24×24px.</CheckListItem>
-<CheckListItem>2. Gestos complexos (como arrastar ou girar) devem ter alternativa simples.</CheckListItem>
-<CheckListItem>3. Ações por toque devem ter opção de cancelamento ou reversão.</CheckListItem>
+<CheckListItem>2. Orientação não restrita: interface deve funcionar em retrato e paisagem.</CheckListItem>
+<CheckListItem>3. Zoom não bloqueado: página permite pinch-to-zoom do navegador.</CheckListItem>
 <CheckListItem>4. Evitar ações disparadas apenas por movimento do dispositivo (ex: agitar).</CheckListItem>
 
 <details>
@@ -286,7 +278,10 @@ Cada tópico foi alinhado com referências da **NBR 17225:2025**, critérios da 
 - [WCAG 2.2 – C.S. 2.5.1](https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures.html)  
 - [WCAG 2.2 – C.S. 2.5.2](https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation.html)  
 - [WCAG 2.2 – C.S. 2.5.4](https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation.html)  
-- [WCAG 2.2 – C.S. 2.5.8](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html)
+- [WCAG 2.2 – C.S. 2.5.8](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html)<br/>
+- NBR 5.10.3 / WCAG 2.2 1.3.4 (A A) (NOVO)<br/>
+- NBR 5.10.3 / WCAG 2.2 1.3.4 (A A)<br/>
+- NBR 5.13.5 / WCAG 2.2 1.4.4 (A A)<br/>
 
 </details>
 

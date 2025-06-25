@@ -53,18 +53,18 @@ const config = {
         //   src: 'img/checklisticon.svg',
         // },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Introdução',
-          },
-          {
-    to: '/docs/devweb', // ou URL externa
-    label: 'Início da Checklist',
-    position: 'left',
-    activeBasePath: 'docs/checklist', // mantém estado “ativo”
-  },
+        // {
+        // type: 'docSidebar',
+        // sidebarId: 'tutorialSidebar',
+        // position: 'left',
+        // label: 'Introdução',
+        // },
+        // {
+        //   to: '/docs/devweb', // ou URL externa
+        //   label: 'Início da Checklist',
+        //   position: 'left',
+        //   activeBasePath: 'docs/checklist', // mantém estado “ativo”
+        // },
           {
             href: 'https://github.com/UnBIHC2025-1/IHC-2025.1-Grupo12',
             label: 'GitHub',
