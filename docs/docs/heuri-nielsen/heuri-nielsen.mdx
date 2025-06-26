@@ -1,0 +1,144 @@
+import CheckListItem from '@site/src/components/CheckListItem.js';
+import CheckListItemMarked from '@site/src/components/CheckListItemMarked.js';
+import Expandable from '@site/src/components/Expandable';
+
+# Heurísticas de Nielsen
+
+Um checklist prático que cobre as dez heurísticas de usabilidade definidas por Jakob Nielsen. Cada item de verificação ajuda a garantir que a interface cumpra os princípios de clareza, eficiência e prevenção de erros recomendados pelo Nielsen Norman Group.
+
+## 1. – Visibilidade do status do sistema
+- <CheckListItem>Mostrar feedback imediato após toda ação do usuário.</CheckListItem>
+- <CheckListItem>Exibir indicadores de carregamento ou progresso para processos demorados.</CheckListItem>
+- <CheckListItem>Usar ícones ou mensagens que sinalizem estados (online/offline, salvo/não salvo).</CheckListItem>
+- <CheckListItem>Manter mensagens de status em local consistente na tela.</CheckListItem>
+
+<details>
+  <summary><strong>Referências</strong></summary>
+  - Nielsen, J. “10 Usability Heuristics for User Interface Design” – Nielsen Norman Group (NN/g).  
+</details>
+
+---
+
+## 2. – Correspondência entre o sistema e o mundo real
+- <CheckListItem>Utilizar terminologia familiar ao usuário, evitando jargões técnicos.</CheckListItem>
+- <CheckListItem>Aderir a metáforas visuais reconhecíveis (lixeira, lupa, carrinho).</CheckListItem>
+- <CheckListItem>Organizar informações em ordem lógica ou cronológica, quando aplicável.</CheckListItem>
+- <CheckListItem>Formatar números, datas e moedas segundo convenções locais.</CheckListItem>
+
+<details>
+  <summary><strong>Referências</strong></summary>
+  - Nielsen, J. “10 Usability Heuristics…” – NN/g.  
+  - ISO 9241-110:2020 – Ergonomics of human–system interaction.  
+</details>
+
+---
+
+## 3. – Controle e liberdade do usuário
+- <CheckListItem>Permitir desfazer/refazer ações (Ctrl + Z, botão “Voltar”).</CheckListItem>
+- <CheckListItem>Confirmar ações destrutivas com diálogo claro (ex.: excluir).</CheckListItem>
+- <CheckListItem>Suportar navegação por teclado e atalhos configuráveis.</CheckListItem>
+- <CheckListItem>Evitar travar o usuário em etapas sem opção de sair ou pular.</CheckListItem>
+
+<details>
+  <summary><strong>Referências</strong></summary>
+  - Nielsen, J. – NN/g.  
+  - WCAG 2.2, critério 3.3.4 (Erro evitável).  
+</details>
+
+---
+
+## 4. – Consistência e padrões
+- <CheckListItem>Usar estilos, cores e tipografia uniformes em todo o site.</CheckListItem>
+- <CheckListItem>Seguir convenções de plataforma (botão primário à direita, ícone de menu “hambúrguer”).</CheckListItem>
+- <CheckListItem>Manter comportamento idêntico para componentes iguais em telas diferentes.</CheckListItem>
+- <CheckListItem>Reaproveitar padrões já conhecidos em vez de criar controles inéditos.</CheckListItem>
+
+<details>
+  <summary><strong>Referências</strong></summary>
+  - Nielsen, J. – NN/g.  
+  - Apple Human Interface Guidelines; Google Material Design.  
+</details>
+
+---
+
+## 5. – Prevenção de erros
+- <CheckListItem>Validar dados em tempo real e destacar campos incorretos.</CheckListItem>
+- <CheckListItem>Desabilitar opções impossíveis no estado atual (botão “Próximo” até preencher campos).</CheckListItem>
+- <CheckListItem>Usar máscaras/inteligência de formatação (CPF, telefone) para entrada correta.</CheckListItem>
+- <CheckListItem>Exibir alertas antes de ações irreversíveis.</CheckListItem>
+
+<details>
+  <summary><strong>Referências</strong></summary>
+  - Nielsen, J. – NN/g.  
+  - WCAG 2.2, 3.3.7 & 3.3.8 (Autenticação acessível).  
+</details>
+
+---
+
+## 6. – Reconhecimento em vez de recordação
+- <CheckListItem>Mostrar atalhos e comandos disponíveis no próprio menu/contexto.</CheckListItem>
+- <CheckListItem>Exibir resultados recentes ou itens favoritos para acesso rápido.</CheckListItem>
+- <CheckListItem>Manter ícones acompanhados de rótulos descritivos.</CheckListItem>
+- <CheckListItem>Preservar configurações e preferências do usuário entre sessões.</CheckListItem>
+
+<details>
+  <summary><strong>Referências</strong></summary>
+  - Nielsen, J. – NN/g.  
+  - Shneiderman, B. “Designing the User Interface”.  
+</details>
+
+---
+
+## 7. – Flexibilidade e eficiência de uso
+- <CheckListItem>Fornecer atalhos de teclado para usuários avançados.</CheckListItem>
+- <CheckListItem>Permitir personalização de layout, idioma ou tema.</CheckListItem>
+- <CheckListItem>Oferecer pesquisa ou filtros para acessar funções rapidamente.</CheckListItem>
+- <CheckListItem>Suportar arrastar-e-soltar além de seleção tradicional.</CheckListItem>
+
+<details>
+  <summary><strong>Referências</strong></summary>
+  - Nielsen, J. – NN/g.  
+  - WCAG 2.2, critério 2.5.1 (Gestos de ponteiro).  
+</details>
+
+---
+
+## 8. – Estética e design minimalista
+- <CheckListItem>Remover elementos visuais que não acrescentem significado ou função.</CheckListItem>
+- <CheckListItem>Manter hierarquia tipográfica clara (título, subtítulo, corpo).</CheckListItem>
+- <CheckListItem>Garantir contraste adequado entre texto e fundo.</CheckListItem>
+- <CheckListItem>Usar espaço em branco para separar blocos de conteúdo.</CheckListItem>
+
+<details>
+  <summary><strong>Referências</strong></summary>
+  - Nielsen, J. – NN/g.  
+  - WCAG 2.2, critério 1.4.3 (Contraste).  
+</details>
+
+---
+
+## 9. – Ajuda os usuários a reconhecer, diagnosticar e recuperar de erros
+- <CheckListItem>Apresentar mensagens de erro em linguagem simples, indicando causa e solução.</CheckListItem>
+- <CheckListItem>Destacar visualmente o campo ou passo que precisa de correção.</CheckListItem>
+- <CheckListItem>Oferecer link “Saiba mais” ou documentação relevante no erro.</CheckListItem>
+- <CheckListItem>Manter o texto do erro próximo ao local de origem.</CheckListItem>
+
+<details>
+  <summary><strong>Referências</strong></summary>
+  - Nielsen, J. – NN/g.  
+  - WCAG 2.2, critério 3.3.3 (Sugestão de correção).  
+</details>
+
+---
+
+## 10. – Ajuda e documentação
+- <CheckListItem>Disponibilizar FAQ ou guia de início rápido acessível a qualquer momento.</CheckListItem>
+- <CheckListItem>Incluir pesquisa dentro da documentação.</CheckListItem>
+- <CheckListItem>Manter exemplos passo a passo e capturas de tela atualizadas.</CheckListItem>
+- <CheckListItem>Oferecer suporte multimídia (texto, vídeo, áudios) e acessível.</CheckListItem>
+
+<details>
+  <summary><strong>Referências</strong></summary>
+  - Nielsen, J. – NN/g.  
+  - ISO 9241-112:2017 – Ergonomics of interaction.  
+</details>

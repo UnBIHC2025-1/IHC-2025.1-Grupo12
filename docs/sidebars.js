@@ -13,18 +13,23 @@ const sidebars = {
     },
      {
       type: 'doc',
+      id: 'heuri-nielsen/heuri-nielsen', // refere-se a 'docs/intro.md'
+      label: '3. Heurísticas de Nielsen',
+    },
+     {
+      type: 'doc',
       id: 'geracaoconteudo/geracaoconteudo', // refere-se a 'docs/intro.md'
-      label: '3. Geração de Conteúdo',
+      label: '4. Geração de Conteúdo',
     },
      {
       type: 'doc',
       id: 'gestaoprojetos/gestaoprojetos', // refere-se a 'docs/intro.md'
-      label: '4. Gestão de Projetos',
+      label: '5. Gestão de Projetos',
     },
      {
       type: 'doc',
       id: 'ferramentas/ferramentas', // refere-se a 'docs/intro.md'
-      label: '5. Ferramentas',
+      label: '6. Ferramentas',
     },
   ],
 };

@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #0B1F3A; /* Azul marinho escuro principal */
+  --ifm-color-primary: #162d4b; /* Azul marinho escuro principal */
   --ifm-color-primary-dark: #081933; /* Azul marinho mais escuro */
   --ifm-color-primary-darker: #061528; /* Azul profundo */
   --ifm-color-primary-darkest: #040F1C; /* Azul quase preto */
@@ -21,7 +21,7 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #6B8CB3; /* Rosa mais escuro e vibrante */
+  --ifm-color-primary: #84a5ce; /* Rosa mais escuro e vibrante */
   --ifm-color-primary-dark: #081933; /* Azul marinho mais escuro */
   --ifm-color-primary-darker: #061528; /* Azul profundo */
   --ifm-color-primary-darkest: #040F1C; /* Azul quase preto */
